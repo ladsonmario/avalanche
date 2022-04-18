@@ -1,0 +1,368 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+@keyframes zoom {
+    0% {font-size: 40px;}
+    25% {font-size: 45px;}
+    50% {font-size: 50px;}
+    75% {font-size: 55px;}
+    100% {font-size: 60px;}
+}
+*, 
+*:after,
+*:before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+}
+.container {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;    
+    color: #ffffff;    
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+header {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+.header--top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin: 0px 10px;   
+}
+
+.header--top a img {    
+    height: 60px;     
+}
+.header-options ul {
+    display: flex;
+    justify-content: space-around;         
+}
+.header-options ul,
+.header-options li {
+    list-style: none;
+}
+.header-options ul a {
+    color: #222831;
+    font-size: 22px;
+    margin: 0px 20px;
+}
+.menu--mobile {
+    width: 40px;
+    height: 40px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;        
+}
+.menu--mobile div {
+    height: 4px;
+    background-color: #222831;
+    border-radius: 5px;
+}
+.logo--menu--mobile {
+    display: none;
+    width: 150px;
+    height: 150px;
+}
+.menu-closer {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    font-size: 30px; 
+    cursor: pointer;
+}
+.welcome {
+    background-image: url('../images/bg-burger.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+.welcome .container {
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+}
+.welcome .header--bottom {
+    margin-left: 10px;
+}
+.welcome .header--bottom h2 {
+    font-size: 70px;
+    text-transform: uppercase;
+    animation: zoom 0.4s;
+    width: 50%;
+}
+.welcome .header--bottom span {
+    font-size: 30px;
+}
+.widget {
+    margin: 40px 0px;
+    color: #222831;
+    display: flex;
+    flex-direction: column;
+    align-items: center;        
+}
+.widget--body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.title {    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;        
+}
+.widget--title {
+    font-size: 50px;
+}
+.widget--bar {
+    height: 5px;
+    width: 35%;
+    background-color: #222831;
+}
+
+.about {
+    background-color: #dddddd;
+    background-image: url('../images/about-bg-edit.png');
+    background-position: center;
+    background-size: cover;
+}
+.about .container {
+    width: auto;
+}
+.about p {
+    max-width: 600px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 0px 0px 10px #666;
+}
+.about--container {
+    width: 400px;
+    height: 250px;
+    background-image: url('../images/about.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about img {
+    height: 200px;
+}
+
+.delivery .container {
+    width: auto;
+}
+.delivery--container {    
+    display: flex;
+    justify-content: space-evenly;
+}
+.delivery .delivery--tel,
+.delivery .delivery--99 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.delivery--tel a {
+    color: #222831;
+    border-bottom: 1px dotted #222831;
+}
+.delivery img {
+    width: 300px;
+}
+.delivery .paymants {
+    border-top: 1px solid #222831;
+    margin-top: 30px;
+    padding-top: 30px;
+    text-align: center;
+}
+.delivery .type-paymants {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-evenly;
+}
+.delivery .type-paymants img {    
+    height: 50px;
+    width: auto;
+    margin: 10px;
+}
+
+.cardapio .container {
+    width: auto;
+}
+.cardapio {
+    background: url('../images/bg-cardapio.jpg');
+    background-position: center;
+    background-size: cover;        
+}
+.cardapio p {
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+}
+.cardapio .food {
+    display: flex;   
+    flex-wrap: wrap; 
+    justify-content: space-around;
+}
+.cardapio .list-food {    
+    padding: 5px;
+    text-align: center;
+    margin: 20px;
+    width: 250px;
+    height: 400px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;        
+}
+.cardapio .list-food img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 30px;    
+}
+.cardapio .list-food h4 {
+    font-size: 35px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.contact {
+    background-color: #222831;    
+}
+.contact .container {
+    width: auto;
+}
+.contact .widget--body {
+    flex-direction: row;
+    justify-content: space-between;    
+    color: #EEEEEE;
+}
+.section-map-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    
+}
+.section-map-info-item {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.section-map-info-item a {
+    display: flex;
+    align-items: center;
+    color: #EEEEEE;    
+    font-size: 20px;
+}
+.section-map-info-img {
+    width: 60px;
+    height: 60px;
+    background-color: #EEEEEE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+.section-map-info-img img {
+    width: 40px;
+    height: 40px;
+}
+.contact iframe {
+    margin: 10px;
+    width: 80%;
+    height: 100%;
+}
+footer {
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+footer a {
+    color: #EEEEEE;
+    border-bottom: 1px dotted #EEEEEE;
+}
+
+.light {
+    color: #EEEEEE;      
+}
+.light-bg {
+    background-color: #EEEEEE;
+}
+.dark {
+    color: #222831;  
+}
+.dark-bg {
+    background-color: #222831;
+}
+@media(min-width:720px) and (max-width:900px) {        
+    .contact .widget--body {
+        flex-direction: column;
+    }        
+}
+@media(min-width:200px) and (max-width: 719px) {    
+    .logo--menu--mobile {
+        display: block;
+    }
+    .header-options ul {
+        position: fixed;
+        flex-direction: column;
+        align-items: center;               
+        height: 100vh;
+        width: 100vw;
+        background-color: #EEEEEE;
+        top: 0px;
+        bottom: 0px;        
+        right: -700px;
+        transition: all ease .5s;
+    }
+    .menu--mobile {
+        display: flex;        
+    } 
+    .menu-closer {
+        display: block;
+    }
+    .welcome .header--bottom h2 {
+        font-size: 40px;
+        text-transform: uppercase;
+        animation: none;
+        width: 50%;
+    }
+    .about--container {
+        width: 280px;
+        height: 200px;        
+    }
+    .cardapio .list-food {        
+        margin: 10px;        
+    }
+    .delivery img {
+        width: 280px;
+    }
+    .delivery--container {
+        flex-direction: column;
+    }
+    .contact .widget--body {
+        flex-direction: column;
+    }
+}

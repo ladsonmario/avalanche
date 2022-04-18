@@ -27,11 +27,11 @@ document.querySelector('.menu--mobile').addEventListener('click', ()=>{
 });
 
 document.querySelector('.menu-closer').addEventListener('click', ()=>{
-    document.querySelector('.header-options ul').style.right = '-700px';    
+    document.querySelector('.header-options ul').style.right = '-720px';    
 });
 
 document.querySelectorAll('nav a').forEach(e => {
 	e.addEventListener('click', ()=> {
-		document.querySelector('.header-options ul').style.right = '-700px';
+		document.querySelector('.header-options ul').style.right = '-720px';
 	});
 });

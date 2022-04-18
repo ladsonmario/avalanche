@@ -35,3 +35,17 @@ document.querySelectorAll('nav a').forEach(e => {
 		document.querySelector('.header-options ul').style.right = '-720px';
 	});
 });
+
+document.querySelectorAll('details').forEach(e => {
+	e.addEventListener('click', checkAttributeOpenner());
+});
+
+function checkAttributeOpenner() {
+	let detailsOpener = document.querySelector('details').getAttribute('open');
+	let addOpen = document.querySelector('details');
+	if(detailsOpener === null) {
+		addOpen.setAttribute('open', '');
+	} else {
+		addOpen.removeAttribute('open');
+	}
+}

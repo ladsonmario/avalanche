@@ -36,16 +36,16 @@ document.querySelectorAll('nav a').forEach(e => {
 	});
 });
 
-document.querySelectorAll('details').forEach(e => {
-	e.addEventListener('click', checkAttributeOpenner());
-});
+// document.querySelectorAll('details').forEach(e => {
+// 	e.addEventListener('click', checkAttributeOpenner());
+// });
 
-function checkAttributeOpenner() {
-	let detailsOpener = document.querySelector('details').getAttribute('open');
-	let addOpen = document.querySelector('details');
-	if(detailsOpener === null) {
-		addOpen.setAttribute('open', '');
-	} else {
-		addOpen.removeAttribute('open');
-	}
-}
+// function checkAttributeOpenner() {
+// 	let detailsOpener = document.querySelector('details').getAttribute('open');
+// 	let addOpen = document.querySelector('details');
+// 	if(detailsOpener === null) {
+// 		addOpen.setAttribute('open', '');
+// 	} else {
+// 		addOpen.removeAttribute('open');
+// 	}
+// }

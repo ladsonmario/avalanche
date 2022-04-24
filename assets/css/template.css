@@ -97,7 +97,7 @@ header {
     cursor: pointer;
 }
 .welcome {
-    background-image: url('../images/bg-burger.jpg');
+    background-image: url('../images/bg-burger-mobile.jpg');
     background-position: center;
     background-size: cover;
     height: 500px;
